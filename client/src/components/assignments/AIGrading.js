@@ -1,45 +1,25 @@
-import React, { useState, useEffect, useContext } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import AuthContext from '../../context/auth/authContext';
+import { useContext, useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 import AlertContext from '../../context/alert/alertContext';
+import AuthContext from '../../context/auth/authContext';
 import api from '../../utils/api';
 
 import {
-  Container,
-  Grid,
-  Paper,
-  Typography,
-  TextField,
-  Button,
-  Box,
-  CircularProgress,
-  Slider,
-  Card,
-  CardContent,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  Chip,
-  IconButton,
-  Tooltip,
-  ToggleButton,
-  ToggleButtonGroup,
-  LinearProgress,
   Alert,
+  Box,
+  Button,
+  CircularProgress,
+  Container,
+  Paper,
+  Slider,
+  Tab,
   Tabs,
-  Tab
+  TextField,
+  Typography
 } from '@mui/material';
 
-import AssignmentIcon from '@mui/icons-material/Assignment';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import PersonIcon from '@mui/icons-material/Person';
-import SmartToyIcon from '@mui/icons-material/SmartToy';
 import SendIcon from '@mui/icons-material/Send';
-import EditIcon from '@mui/icons-material/Edit';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import DeleteIcon from '@mui/icons-material/Delete';
-import AddCircleIcon from '@mui/icons-material/AddCircle';
+import SmartToyIcon from '@mui/icons-material/SmartToy';
 
 const TabPanel = ({ children, value, index }) => (
   <div hidden={value !== index}>

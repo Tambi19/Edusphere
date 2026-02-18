@@ -1,34 +1,33 @@
-import React, { useEffect, useState, useContext } from 'react';
-import { useParams, useNavigate, useLocation } from 'react-router-dom';
-import { 
-  Container, 
-  Typography, 
-  Paper, 
-  Grid, 
-  Box, 
-  CircularProgress, 
-  Button, 
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+import AssignmentIcon from '@mui/icons-material/Assignment';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import GradeIcon from '@mui/icons-material/Grade';
+import PendingIcon from '@mui/icons-material/Pending';
+import PersonIcon from '@mui/icons-material/Person';
+import {
   Alert,
+  Box,
+  Button,
+  Card,
+  CardContent,
+  Chip,
+  CircularProgress,
+  Container,
+  Grid,
+  LinearProgress,
+  Paper,
   Table,
   TableBody,
   TableCell,
   TableContainer,
   TableHead,
   TableRow,
-  Chip,
-  Divider,
-  Card,
-  CardContent,
-  LinearProgress
+  Typography
 } from '@mui/material';
-import AssignmentIcon from '@mui/icons-material/Assignment';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import PendingIcon from '@mui/icons-material/Pending';
-import GradeIcon from '@mui/icons-material/Grade';
-import PersonIcon from '@mui/icons-material/Person';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import AuthContext from '../../context/auth/authContext';
 import axios from 'axios';
+import { useContext, useEffect, useState } from 'react';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
+import AuthContext from '../../context/auth/authContext';
 
 const StudentProgress = () => {
   const { id } = useParams(); // student ID

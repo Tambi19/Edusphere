@@ -1,28 +1,28 @@
-import React, { useContext, Fragment } from 'react';
+import React, { Fragment, useContext } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import AuthContext from '../../context/auth/authContext';
 
 import {
   AppBar,
-  Toolbar,
-  Typography,
-  Button,
-  Box,
   Avatar,
-  useMediaQuery,
-  IconButton,
+  Box,
+  Button,
+  Divider,
   Drawer,
+  IconButton,
   List,
   ListItem,
   ListItemButton,
   ListItemText,
-  Divider,
   Slide,
+  Toolbar,
+  Typography,
+  useMediaQuery,
   useTheme,
 } from '@mui/material';
 
-import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import MenuIcon from '@mui/icons-material/Menu';
 
 const Navbar = () => {
   const authContext = useContext(AuthContext);

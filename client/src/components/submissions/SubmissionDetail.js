@@ -1,27 +1,25 @@
-import React, { useEffect, useState, useContext } from 'react';
-import { useParams, useNavigate } from 'react-router-dom';
-import { 
-  Container, 
-  Typography, 
-  Paper, 
-  Grid, 
-  Box, 
-  CircularProgress, 
-  Button, 
-  Alert,
-  Card,
-  CardContent,
-  Chip,
-  Divider,
-  TextField
-} from '@mui/material';
-import AssignmentIcon from '@mui/icons-material/Assignment';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
-import PersonIcon from '@mui/icons-material/Person';
-import GradeIcon from '@mui/icons-material/Grade';
+import AssignmentIcon from '@mui/icons-material/Assignment';
 import FeedbackIcon from '@mui/icons-material/Feedback';
-import AuthContext from '../../context/auth/authContext';
+import GradeIcon from '@mui/icons-material/Grade';
+import PersonIcon from '@mui/icons-material/Person';
+import {
+  Alert,
+  Box,
+  Button,
+  Chip,
+  CircularProgress,
+  Container,
+  Divider,
+  Grid,
+  Paper,
+  TextField,
+  Typography
+} from '@mui/material';
 import axios from 'axios';
+import { useContext, useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
+import AuthContext from '../../context/auth/authContext';
 
 const SubmissionDetail = () => {
   const { id } = useParams(); // submission ID

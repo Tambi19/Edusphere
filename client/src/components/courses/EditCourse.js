@@ -1,18 +1,18 @@
-import React, { useState, useContext, useEffect } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
 import {
-  Container,
-  Typography,
-  Box,
-  TextField,
-  Button,
-  Paper,
-  Grid,
   Alert,
+  Box,
+  Button,
+  CardMedia,
   CircularProgress,
+  Container,
   Divider,
-  CardMedia
+  Grid,
+  Paper,
+  TextField,
+  Typography
 } from '@mui/material';
+import { useContext, useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 import AuthContext from '../../context/auth/authContext';
 import api from '../../utils/api';
 

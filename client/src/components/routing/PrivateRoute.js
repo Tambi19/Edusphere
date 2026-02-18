@@ -1,7 +1,7 @@
-import React, { useContext, useEffect, useState } from 'react';
+import { Box, Button, CircularProgress, Typography } from '@mui/material';
+import { useContext, useEffect, useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import AuthContext from '../../context/auth/authContext';
-import { Box, CircularProgress, Typography, Button } from '@mui/material';
 
 const PrivateRoute = ({ component: Component }) => {
   const authContext = useContext(AuthContext);

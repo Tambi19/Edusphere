@@ -1,22 +1,22 @@
-import React, { useState, useContext, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import AuthContext from '../../context/auth/authContext';
-import AlertContext from '../../context/alert/alertContext';
-import {
-  TextField,
-  Button,
-  Typography,
-  Box,
-  Paper,
-  Avatar,
-  Grid,
-  Link,
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem
-} from '@mui/material';
 import PersonAddAltIcon from '@mui/icons-material/PersonAddAlt';
+import {
+  Avatar,
+  Box,
+  Button,
+  FormControl,
+  Grid,
+  InputLabel,
+  Link,
+  MenuItem,
+  Paper,
+  Select,
+  TextField,
+  Typography
+} from '@mui/material';
+import { useContext, useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import AlertContext from '../../context/alert/alertContext';
+import AuthContext from '../../context/auth/authContext';
 
 const Register = () => {
   const authContext = useContext(AuthContext);

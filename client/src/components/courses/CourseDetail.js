@@ -1,34 +1,34 @@
-import React, { useState, useEffect, useContext } from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
-import AuthContext from '../../context/auth/authContext';
-import api from '../../utils/api';
 import {
-  Container,
-  Typography,
+  Alert,
   Box,
-  Paper,
-  Grid,
   Button,
-  Chip,
   Card,
+  CardActions,
   CardContent,
   CardHeader,
-  CardActions,
+  Chip,
   CircularProgress,
+  Container,
   Dialog,
   DialogActions,
   DialogContent,
   DialogContentText,
   DialogTitle,
-  Alert,
+  Grid,
+  Paper,
+  Typography,
 } from '@mui/material';
+import { useContext, useEffect, useState } from 'react';
+import { Link, useNavigate, useParams } from 'react-router-dom';
+import AuthContext from '../../context/auth/authContext';
+import api from '../../utils/api';
 
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import AssignmentIcon from '@mui/icons-material/Assignment';
-import PeopleIcon from '@mui/icons-material/People';
-import PersonIcon from '@mui/icons-material/Person';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
+import PeopleIcon from '@mui/icons-material/People';
+import PersonIcon from '@mui/icons-material/Person';
 
 const CourseDetail = () => {
   const { id } = useParams();

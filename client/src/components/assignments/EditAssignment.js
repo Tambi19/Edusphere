@@ -1,30 +1,20 @@
-import React, { useState, useEffect, useContext } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
 import {
-  Container,
-  Typography,
-  Box,
-  TextField,
-  Button,
-  Paper,
-  Grid,
   Alert,
+  Box,
+  Button,
+  CircularProgress,
+  Container,
   FormControlLabel,
+  Paper,
   Switch,
-  Divider,
-  IconButton,
-  List,
-  ListItem,
-  ListItemText,
-  ListItemSecondaryAction,
-  CircularProgress
+  TextField,
+  Typography
 } from '@mui/material';
-import DeleteIcon from '@mui/icons-material/Delete';
-import AddIcon from '@mui/icons-material/Add';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import { useContext, useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 
-import api from '../../utils/api';
 import AuthContext from '../../context/auth/authContext';
+import api from '../../utils/api';
 
 const EditAssignment = () => {
   const navigate = useNavigate();

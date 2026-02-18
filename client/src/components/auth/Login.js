@@ -1,25 +1,24 @@
-import React, { useState, useContext, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import AuthContext from '../../context/auth/authContext';
-import AlertContext from '../../context/alert/alertContext';
-import {
-  TextField,
-  Button,
-  Typography,
-  Box,
-  Paper,
-  Avatar,
-  Grid,
-  Link,
-  Alert,
-  CircularProgress,
-  IconButton,
-  InputAdornment
-} from '@mui/material';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
-import setAuthToken from '../../utils/setAuthToken';
+import {
+  Alert,
+  Avatar,
+  Box,
+  Button,
+  CircularProgress,
+  Grid,
+  IconButton,
+  InputAdornment,
+  Link,
+  Paper,
+  TextField,
+  Typography
+} from '@mui/material';
+import { useContext, useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import AlertContext from '../../context/alert/alertContext';
+import AuthContext from '../../context/auth/authContext';
 
 const Login = () => {
   const authContext = useContext(AuthContext);

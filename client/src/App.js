@@ -1,51 +1,51 @@
 // App.jsx
-import React, { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import { Box, CssBaseline, Container } from "@mui/material";
+import { Box, Container, CssBaseline } from "@mui/material";
+import { useEffect } from "react";
+import { Navigate, Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import "./App.css";
 import { CustomThemeProvider } from "./context/ThemeContext";
 
 
 // Layout Components
-import Navbar from "./components/layout/Navbar";
-import Footer from "./components/layout/Footer";
 import Alert from "./components/layout/Alert";
+import Footer from "./components/layout/Footer";
+import Navbar from "./components/layout/Navbar";
 
 // Pages
-import Home from "./components/pages/Home";
 import Dashboard from "./components/pages/Dashboard";
-import Profile from "./components/pages/Profile";
+import Home from "./components/pages/Home";
 import NotFound from "./components/pages/NotFound";
+import Profile from "./components/pages/Profile";
 
 // Auth
-import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
+import Register from "./components/auth/Register";
 
 // Courses
-import Courses from "./components/courses/Courses";
 import CourseDetail from "./components/courses/CourseDetail";
+import Courses from "./components/courses/Courses";
 import CreateCourse from "./components/courses/CreateCourse";
 import EditCourse from "./components/courses/EditCourse";
 import JoinCourse from "./components/courses/JoinCourse";
 
 // Assignments
+import AssignmentGrading from "./components/assignments/AIGrading";
+import AssignmentSubmission from "./components/assignments/AssignmentSubmission";
 import CreateAssignment from "./components/assignments/CreateAssignment";
 import EditAssignment from "./components/assignments/EditAssignment";
-import AssignmentSubmission from "./components/assignments/AssignmentSubmission";
-import AssignmentGrading from "./components/assignments/AIGrading";
 
 // Students & Submissions
 import StudentProgress from "./components/students/StudentProgress";
 import SubmissionDetail from "./components/submissions/SubmissionDetail";
 
 // Context Providers
-import AuthState from "./context/auth/AuthState";
 import AlertState from "./context/alert/AlertState";
+import AuthState from "./context/auth/AuthState";
 
 // Utils
-import setAuthToken from "./utils/setAuthToken";
-import PrivateRoute from "./components/routing/PrivateRoute";
 import ErrorBoundary from "./components/common/ErrorBoundary";
+import PrivateRoute from "./components/routing/PrivateRoute";
+import setAuthToken from "./utils/setAuthToken";
 
 
 // Set token on load
