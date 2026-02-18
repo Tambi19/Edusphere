@@ -1,4 +1,4 @@
-# TeachAI Assistant
+# EduSphere
 
 An AI-powered teacher assistant for automated grading and feedback.
 
@@ -157,4 +157,4 @@ teach-ai-assistant/
 
 ## Contributors
 
-- Your Name - Initial work 
+- K Tambi Rao
