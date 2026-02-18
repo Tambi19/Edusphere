@@ -85,7 +85,7 @@ const Home = () => {
             Welcome to EduSphere
           </Typography>
           <Typography variant="h5" color="text.secondary" paragraph>
-            An AI-powered teaching assistant that automates grading and provides personalized feedback.
+            An AI-powered teaching assistant that automates grading and provides personalized feedback to help teachers save time and students learn better.
           </Typography>
 
           {authContext.isAuthenticated ? (

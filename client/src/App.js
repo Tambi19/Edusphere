@@ -137,7 +137,6 @@ const App = () => {
                 </Container>
               </Box>
 
-              {/* Footer (responsive) */}
               <Footer />
             </Box>
 
